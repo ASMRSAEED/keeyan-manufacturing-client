@@ -110,7 +110,7 @@ const CheckoutForm = ({ order }) => {
                         },
                     }}
                 />
-                {paymentIntent ? <p className='mt-4 text-green-600 font-bold '>Your Order Compleat</p> :
+                {paymentIntent ? <p className='mt-4 text-green-600 font-bold '>Order Success</p> :
                     <button className="btn btn-success mt-4" type="submit" disabled={!stripe || clientSecret}>
                         Order
                     </button>
