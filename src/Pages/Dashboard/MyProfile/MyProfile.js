@@ -30,8 +30,8 @@ const MyProfile = () => {
               <p className='text-xl font-bold'>Email: {user?.email}</p>
               <h2 className="card-title">Education: {education}</h2>
               <p className='text-xl'>Location: {location}</p>
-              <p className='text-xl'>Number: {number}</p>
-              <p className='text-xl'>LinkDin Profile: <a className='text-blue-700 font-bold' target='_blank' rel='noreferrer' href={linkDin}>{linkDin}</a></p>
+              <p className='text-xl'>Phone Number: {number}</p>
+              <p className='text-xl'>LinkedIn Profile Link: <a className='text-blue-700 font-bold' target='_blank' rel='noreferrer' href={linkDin}>{linkDin}</a></p>
             </div>
           </div>
         </div>
