@@ -21,7 +21,7 @@ const ProfileForm = ({ children, profile, refetch }) => {
         const linkDin = event.target.linkDin.value;
         const profileDetail = { name, email, education, location, number, linkDin };
         if (profile.length < 1) {
-            fetch(`http://localhost:5000/addProfile`, {
+            fetch(`https://young-savannah-04496.herokuapp.com/addProfile`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

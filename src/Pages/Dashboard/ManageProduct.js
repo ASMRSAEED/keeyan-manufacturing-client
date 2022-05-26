@@ -6,7 +6,7 @@ import ManageTool from './ManageTool';
 const ManageProduct = () => {
 
     const { isLoading, data: tools, refetch } = useQuery('tools', () =>
-        fetch(`http://localhost:5000/tools`).then(res =>
+        fetch(`https://young-savannah-04496.herokuapp.com/tools`).then(res =>
             res.json()
         )
     )

@@ -5,7 +5,7 @@ const ManageOrder = ({ order, index, refetch }) => {
     const { toolName, newPrice, email, paid, img, _id, shipped } = order;
     const shippedPaid = (id) => {
         console.log(id)
-        fetch(`http://localhost:5000/updatePaid/${id}`, {
+        fetch(`https://young-savannah-04496.herokuapp.com/updatePaid/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

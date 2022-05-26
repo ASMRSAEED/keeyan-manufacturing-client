@@ -8,7 +8,7 @@ const User = ({ user, refetch }) => {
     const { email, role, _id } = user;
     const navigate = useNavigate()
     const makeAdmin = (id) => {
-        fetch(`http://localhost:5000/makeAdmin/${id}`, {
+        fetch(`https://young-savannah-04496.herokuapp.com/makeAdmin/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

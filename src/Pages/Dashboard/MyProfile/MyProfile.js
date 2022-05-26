@@ -9,7 +9,7 @@ import ProfileUpdateForm from './ProfileUpdateForm';
 const MyProfile = () => {
   const [user] = useAuthState(auth);
   const { isLoading, data: profile, refetch } = useQuery(['profile'], () =>
-    fetch(`http://localhost:5000/profile?email=${user?.email}`).then(res =>
+    fetch(`https://young-savannah-04496.herokuapp.com/profile?email=${user?.email}`).then(res =>
       res.json()
     )
   )

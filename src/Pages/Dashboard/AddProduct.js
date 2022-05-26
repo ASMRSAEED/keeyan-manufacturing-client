@@ -29,7 +29,7 @@ const AddProduct = () => {
                     if (+minimumQuantity > 0 && +availableQuantity > 0) {
                         if (+price > 0) {
                             if (+minimumQuantity < +availableQuantity) {
-                                fetch(`http://localhost:5000/addProduct`, {
+                                fetch(`https://young-savannah-04496.herokuapp.com/addProduct`, {
                                     method: 'POST',
                                     headers: {
                                         'content-type': 'application/json',

@@ -23,7 +23,7 @@ const ProfileUpdateForm = ({ children, profile, refetch }) => {
         console.log(profileDetail)
         // if (profile.length < 1) {
         console.log(_id)
-        fetch(`http://localhost:5000/profileUpdate/${_id}`, {
+        fetch(`https://young-savannah-04496.herokuapp.com/profileUpdate/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

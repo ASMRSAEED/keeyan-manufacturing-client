@@ -5,7 +5,7 @@ import User from './User';
 
 const MakeAdmin = () => {
     const { isLoading, data: allUser, refetch } = useQuery('users', () =>
-        fetch(`http://localhost:5000/showAllUser`,).then(res =>
+        fetch(`https://young-savannah-04496.herokuapp.com/showAllUser`,).then(res =>
             res.json()
         )
     )

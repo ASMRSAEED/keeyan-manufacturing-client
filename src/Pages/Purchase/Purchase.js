@@ -13,7 +13,7 @@ const Purchase = () => {
     const [quantity, setQuantity] = useState('')
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { isLoading, data: tool } = useQuery(['tool'], () =>
-        fetch(`http://localhost:5000/tools/${id}`).then(res =>
+        fetch(`https://young-savannah-04496.herokuapp.com/tools/${id}`).then(res =>
             res.json()
         )
     )
@@ -35,7 +35,7 @@ const Purchase = () => {
         if (availableQuantity > +quantity) {
             if (minimumQuantity <= availableQuantity) {
                 const newPrice = +data.minimumQuantity * price
-                fetch(`http://localhost:5000/purchase`, {
+                fetch(`https://young-savannah-04496.herokuapp.com/purchase`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

@@ -5,7 +5,7 @@ import ManageOrder from './ManageOrder';
 
 const ManageOrders = () => {
     const { isLoading, data: manageOrders, refetch } = useQuery('manageOrders', () =>
-        fetch(`http://localhost:5000/allOrders`,).then(res =>
+        fetch(`https://young-savannah-04496.herokuapp.com/allOrders`,).then(res =>
             res.json()
         )
     )

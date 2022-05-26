@@ -7,7 +7,7 @@ const AddReview = () => {
         const rate = event.target.rate.value;
         const description = event.target.description.value;
         const review = { rate, description }
-        fetch(`http://localhost:5000/addReview`, {
+        fetch(`https://young-savannah-04496.herokuapp.com/addReview`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

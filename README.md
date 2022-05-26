@@ -1,25 +1,28 @@
-# Keeyan Manufacturer
+# Keeyan Manufacturing
 
- ### [Live SIte](https://tools-a576c.web.app/).
+ ### [Live SIte](https://keeyan-manufacturing.web.app/).
 
 ## Website Feature
 
-#### “*” 1. Website have some differant feature have a Navbar, Banner, Electric Tools, Buisnes Summary, Reviews or footer amd Every Electric Tools hava a Purchase Button.
+#### “*” 1. The website has different features: a Navbar, Banner, Electric Tools, Business Summary, Reviews or footer and Every Electric Tool have a Purchase Button.
 
-#### “*” 2. When You Click The Button Then Go To The Purchase Page This Page Is Private Protected Route This page You add You Product Quantity and the Product have some limit minimum Quantity or available quantity .
+#### “*” 2. When You Click The Button Then Go To The Purchase Page This Page Is Private Protected Route This page You add You Product Quantity and the Product have some limited minimum Quantity or available quantity.
 
-#### “*” 3. When You add Your Quantity or Your Quantity more then minimum quantity or your Quantity is less by MinimumQuantity Then Purchase Button is disabled. You order more then available quantity then also disabled the button.
+#### “*” 3. When You add Your Quantity or Your Quantity more the minimum quantity or your Quantity is less by MinimumQuantity Then Purchase Button is disabled. You order more of the available quantity and then also disable the button.
 
-#### “*” 4. When you Purchase is Success Fully then All information is have the DashBoard. DashBoard have two type of route one is user only and two is admin only.Normal User can purchase the product. Dashboard have (user only) my orders or add a review and my profile is active for all type of user.
+#### “*” 4. When you Purchase is Success Fully then All information has the DashBoard. DashBoard have two types of route one is the user only and two is admin only. Normal Users can purchase the product. The dashboard has (user only) my orders or adds a review and my profile is active for all types of users.
 
-#### “*” 5. MyOrder page show the all product when you purchase and ther have a order button you click the order button then go to the payment route you give the card information and click pay button then your product is paid or you see the transection IO or Myorder page.  
+#### “*” 5. Order page shows the product when you purchase and they have an order button you click the order button then go to the payment route you give the card information and click the pay button then your product is paid or you see the transaction IO or Myorder page.  
 
-#### “*” 6. When You dont pay the orders then you cancel the product on your my order page when you paid for it then dont cances or delete it. This Page have login or sign up page also have a potfolio this page have my education or skill information also have a blog route ther have 6 question or answer.
+#### “*” 6. When You don't pay the orders then you cancel the product on your my order page when you paid for it then don't cancel or delete it. This page has a login or sign up page and also have a portfolio this page has my education or skill information and also have a blog route have 6 questions or answer.
 
-#### “*” 7. When You login as a admin Then You will see more feature on this first is my profile is this comon and have a make admin page on dashboard make admin page is you will make some admin for your work on this website and have add a product this page you add a product when your token is not valid then you add product then you logd out on this page.
-#### “*” 8. Manage all product page see the all product you have (as a admin) and ther you delete the product if you need.
-## 
-## Technologies Use:
+#### “*” 7. When You log in as an admin Then You will see more features on this first is my profile is this common and have a make admin page on the dashboard make admin page is you will make some admin for your work on this website and have added a product this page you add a product when your token is not valid then you add a product then you logged out on this page.
+
+#### “*” 8. Manage all product pages see all products you have (as an admin) and then delete the product if you need.
+
+
+## Technologies Used In This Project:
+
 #### 1. React.js                   
 #### 2. Node.js
 #### 3. MongoDB
@@ -35,5 +38,3 @@
 #### 13. React Toastify
 #### 14. Json Web Token
 #### 15. Stripe
-
-###  [Backend Code Link: ](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Tanjinhossain1).

@@ -45,7 +45,7 @@ const Navbar = () => {
                             <li>{navItems}</li>
                         </ul>
                     </div>
-                    <Link to='/home' className="btn btn-ghost normal-case text-xl">Electric-Tools</Link>
+                    <Link to='/home' className="btn btn-ghost normal-case text-xl">Keeyan Manufacturing</Link>
                     <div className='text-end'>
                         <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Others</label>
                     </div>
