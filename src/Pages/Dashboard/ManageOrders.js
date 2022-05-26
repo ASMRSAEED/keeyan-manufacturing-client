@@ -21,13 +21,13 @@ const ManageOrders = () => {
                     <thead>
 
                         <tr>
-                            <th></th>
-                            <th>Email</th>
+                            <th>S.L</th>
+                            <th>Email Address</th>
+                            <th>Product</th>
                             <th>Name</th>
-                            <th>Price</th>
-                            <th>Favorite Color</th>
-                            <th>Status</th>
-                            <th>Payment</th>
+                            <th></th>
+                            <th>Payments</th>
+                            <th>Shipment</th>
                         </tr>
 
                     </thead>

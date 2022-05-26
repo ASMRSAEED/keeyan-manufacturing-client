@@ -25,14 +25,14 @@ const ManageOrder = ({ order, index, refetch }) => {
             <th><small>{email}</small></th>
 
             <td> <div className="avatar">
-                <div className="w-14 rounded-full ring ">
+                <div className="w-14 rounded-lg">
                     <img alt='toolImage' src={img} />
                 </div>
             </div></td>
             <td>{toolName}</td>
             <td>{newPrice}</td>
-            <td>{paid ? <span className='text-green-600 font-bold '>{shipped ? shipped : 'Pending'}</span> : <span className='text-red-400 font-semibold'>UnPaid</span>}</td>
-            <td className=''><button disabled={!paid} onClick={() => shippedPaid(_id)} className='btn btn-outline'>Shipped Now</button></td>
+            <td>{paid ? <span className='text-green-600 font-bold '>{shipped ? shipped : 'Pending'}</span> : <span className='text-red-600 font-semibold'>NOT PAID</span>}</td>
+            <td className=''><button disabled={!paid} onClick={() => shippedPaid(_id)} className='btn btn-outline'>Ship Now</button></td>
         </tr>
     );
 };

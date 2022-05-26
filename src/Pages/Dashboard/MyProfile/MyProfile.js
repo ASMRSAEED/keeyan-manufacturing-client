@@ -40,7 +40,7 @@ const MyProfile = () => {
   }
   return (
     <div>
-      <h1 className='text-xl font-bold text-red-400 text-center'>Add Your Profile </h1>
+      <h1 className='text-xl font-bold text-red-400'>Add Your Profile </h1>
       <div className='grid lg:grid-cols-2'>
         <div className='sm:space-y-reverse'>
           <ProfileForm profile={profile} refetch={refetch}>Add Profile</ProfileForm>

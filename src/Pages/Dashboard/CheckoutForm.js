@@ -18,7 +18,8 @@ const CheckoutForm = ({ order }) => {
             fetch(`https://young-savannah-04496.herokuapp.com/create-payment`, {
                 method: 'POST',
                 headers: {
-                    'content-type': 'application/json'
+                    'content-type': 'application/json',
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 },
                 body: JSON.stringify({ newPrice: newPrice })
             })
@@ -46,7 +47,7 @@ const CheckoutForm = ({ order }) => {
             return
         }
 
-        const { error, paymentMethod } = await stripe.createPaymentMethod({
+        const { error } = await stripe.createPaymentMethod({
             type: 'card',
             card,
         });
@@ -54,7 +55,7 @@ const CheckoutForm = ({ order }) => {
             toast.error(error.message);
 
         } else {
-            toast.success('Payment Success Full');
+            toast.success('Payment Successful');
         }
         setLoading(true)
         const { paymentIntent, confirmError } = await stripe.confirmCardPayment(
@@ -110,7 +111,7 @@ const CheckoutForm = ({ order }) => {
                     }}
                 />
                 {paymentIntent ? <p className='mt-4 text-green-600 font-bold '>Your Order Compleat</p> :
-                    <button className="btn btn-success mt-4" type="submit" disabled={!stripe || !clientSecret}>
+                    <button className="btn btn-success mt-4" type="submit" disabled={!stripe || clientSecret}>
                         Order
                     </button>
                 }

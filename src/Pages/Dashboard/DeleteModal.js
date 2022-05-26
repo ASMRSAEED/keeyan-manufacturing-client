@@ -7,7 +7,7 @@ const DeleteModal = ({ children }) => {
             <input type="checkbox" id="deleteModal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
-                    <h3 className="font-bold text-red-400 text-2xl">Are You Sure You Want To Delete It.</h3>
+                    <h3 className="font-bold text-red-400 text-2xl text-center">Are You Sure?</h3>
 
                     <div className="modal-action">
                         {children}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='text-white '>
+        <div className='text-white'>
             <div className="hero min-h-screen pb-20">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img alt='Electric tools' src="https://i.ibb.co/2gg32Rn/Banner.png" className="max-w-sm rounded-lg shadow-2xl" />
