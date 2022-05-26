@@ -16,7 +16,7 @@ const RequireAdmin = ({ children }) => {
         return <Loading loading={loading} color={'#081663'}></Loading>
     }
     if (!user || !admin) {
-        toast.error('Your Not A Admin')
+        toast.error('Unauthorized Access')
         return <Navigate to="/home" state={{ from: location }} replace />;
     }
 

@@ -11,7 +11,7 @@ const BusinessSummary = () => {
                 <div className='grid md:grid-cols-2 text-center mt-12 lg:grid-cols-4'>
                     <div>
                         <FontAwesomeIcon className='text-7xl text-[#099ab0]' icon={faFileCirclePlus} />
-                        <p className='text-3xl font-semibold text-blue-900 my-2'>100m+</p>
+                        <p className='text-3xl font-semibold text-blue-900 my-2'>500m+</p>
                         <p className='text-xl font-semibold text-[#1bb0b3]'>Revenue</p>
                     </div>
                     <div>

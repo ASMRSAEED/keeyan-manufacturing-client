@@ -12,7 +12,6 @@ const Tools = () => {
     if (isLoading) {
         return <Loading color={'#1414e3'} loading={isLoading} />
     }
-    console.log(tools, 'tools')
     if (tools) {
         return (
             <div>

@@ -18,7 +18,7 @@ const Payment = () => {
     }
     const { img, newPrice, quantity, toolName } = order[0];
 
-    const stripePromise = loadStripe('pk_test_51L0j3OFuLz5Y1W90JfJ4aPsQk26Sw18FKES7T70zrdNvsBho1uGq5Awnm5STU8LrSZCkMTPfN0bRAvV6Mq1fIfAD007cwlDQ8L');
+    const stripePromise = loadStripe('pk_test_51L3FZwKevRnz22sezOhGzf3bKtNEAaWKCk7GuNnANXioDIcR2lx0hwFVqISwJXVOpmdiVqeYYbjTCypCU0fGnGmh00aRG0GfXd');
     if (isLoading) {
         return <Loading loading={isLoading} color={'#b51b7d'}></Loading>
     }

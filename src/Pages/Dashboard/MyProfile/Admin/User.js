@@ -25,9 +25,9 @@ const User = ({ user, refetch }) => {
             })
             .then(data => {
                 if (data.acknowledged) {
-                    toast.success('Admin Add SuccessFully!')
+                    toast.success('Admin Added SuccessFully!')
                 } else {
-                    toast.error('Fail To Make Admin')
+                    toast.error('Failed To Make Admin')
                 }
                 refetch()
             })

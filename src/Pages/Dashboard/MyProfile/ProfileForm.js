@@ -32,19 +32,17 @@ const ProfileForm = ({ children, profile, refetch }) => {
                 .then(res => {
                     if (res.status === 401 || res.status === 403) {
                         signOut(auth)
-                        toast.error('You Are not a Valid user Login again')
+                        toast.error('Unauthorized! Please Login Again')
                         navigate('/home')
                     }
                     return res.json()
                 })
                 .then(data => {
                     if (data.acknowledged) {
-                        toast.success('Admin Add SuccessFully!')
+                        toast.success('Your Profile Added SuccessFully!')
                     } else {
-                        toast.error('profile add compleat!')
+                        toast.error('Please Fill All The Field')
                     }
-                    console.log(data)
-                    // toast.success('profile add compleat!')
                     event.target.reset()
                     refetch()
                 })
