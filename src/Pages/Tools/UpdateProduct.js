@@ -8,7 +8,7 @@ const UpdateProduct = () => {
 
     const onSubmit = (data) => {
         console.log(data)
-        toast.success('Update Product is not impleamnet after assaignment i update it')
+        toast.success('Not Working')
 
     }
     return (
@@ -42,7 +42,7 @@ const UpdateProduct = () => {
                     </div>
                     <div className="form-control w-full max-w-xs mt-2">
                         <label className="label">
-                            <span className="label-text">Price Per Piece </span>
+                            <span className="label-text">Price Per Unit </span>
                         </label>
                         <input type="number" {...register("price", { required: true })} placeholder="Price" className="input input-bordered w-full max-w-xs" required />
                     </div>

@@ -31,8 +31,8 @@ const Payment = () => {
                 <div className='ml-12'>
                     <h1 className='text-2xl'>Name: {toolName}</h1>
                     <br />
-                    <h1>Price: <span className='text-pink-700 font-bold'>{newPrice}$</span></h1>
-                    <h1>Quantity: {quantity}</h1>
+                    <h1>Total Price: <span className='text-pink-700 font-bold'>${newPrice}</span></h1>
+                    <h1>Quantity: {quantity} Piece</h1>
                 </div>
             </div>
             <div className='card-body rounded-lg shadow-2xl lg:w-2/4 mt-12'>

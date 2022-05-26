@@ -26,8 +26,9 @@ const Order = ({ order, refetch }) => {
     return (
         <tr>
             <th>{toolName}</th>
-            <td>{newPrice}</td>
-            <td>{quantity}</td>
+            <td>${newPrice}</td>
+            <td>{quantity} Piece</td>
+            
             {paid ? <td className='text-green-500'>Payment Successful <br /> <small>Transaction ID: <br /> {transactionId}</small></td> : <td> <button onClick={() => navigate(`/dashboard/payment/${_id}`)} className="btn btn-outline bg-green-600 border-0 text-white">PAY</button></td>}
             {
                 !paid &&

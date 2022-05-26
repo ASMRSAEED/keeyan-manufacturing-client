@@ -13,9 +13,8 @@ const CheckoutForm = ({ order }) => {
     useEffect(() => {
 
         const { newPrice } = order[0];
-        console.log(newPrice)
         if (newPrice) {
-            fetch(`https://young-savannah-04496.herokuapp.com/create-payment`, {
+            fetch(`https://young-savannah-04496.herokuapp.com/create-payment/`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
@@ -78,13 +77,13 @@ const CheckoutForm = ({ order }) => {
             fetch(`https://young-savannah-04496.herokuapp.com/purchase/${_id}`, {
                 method: 'PATCH',
                 headers: {
-                    'content-type': 'application/json'
+                    'content-type': 'application/json',
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 },
                 body: JSON.stringify({ transactionId: paymentIntent.id })
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
                     setLoading(false)
                 })
             setPaymentIntent(paymentIntent.id)
@@ -112,7 +111,7 @@ const CheckoutForm = ({ order }) => {
                 />
                 {paymentIntent ? <p className='mt-4 text-green-600 font-bold '>Order Success</p> :
                     <button className="btn btn-success mt-4" type="submit" disabled={!stripe || clientSecret}>
-                        Order
+                        PAY
                     </button>
                 }
             </form>

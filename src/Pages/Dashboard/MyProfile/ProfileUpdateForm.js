@@ -34,16 +34,16 @@ const ProfileUpdateForm = ({ children, profile, refetch }) => {
             .then(res => {
                 if (res.status === 401 || res.status === 403) {
                     signOut(auth)
-                    toast.error('You Are not a Valid user Login again')
+                    toast.error('You Are not a Valid User Login Again')
                     navigate('/home')
                 }
                 return res.json()
             })
             .then(data => {
                 if (data.acknowledged) {
-                    toast.success('profile add compleat!')
+                    toast.success('Profile Added Successfully!')
                 } else {
-                    toast.error('Fail To Update Profile!')
+                    toast.error('Fail To Update Your Profile!')
                 }
                 console.log(data)
                 // toast.success('profile add compleat!')

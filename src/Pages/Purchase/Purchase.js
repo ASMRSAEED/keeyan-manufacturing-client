@@ -22,7 +22,6 @@ const Purchase = () => {
     }
     const { name: toolName, price, minimumQuantity, img, availableQuantity } = tool;
     const onSubmit = (data, event) => {
-        console.log(data)
         const email = user?.email;
         const name = user?.displayName;
         const number = data.number;
@@ -34,7 +33,7 @@ const Purchase = () => {
         }
         if (availableQuantity > +quantity) {
             if (minimumQuantity <= availableQuantity) {
-                const newPrice = +data.minimumQuantity * price
+                const newPrice = quantity * price
                 fetch(`https://young-savannah-04496.herokuapp.com/purchase`, {
                     method: 'POST',
                     headers: {
@@ -52,7 +51,7 @@ const Purchase = () => {
                     })
 
             } else {
-                toast.error(`must be purchase ${minimumQuantity} piece tool`)
+                toast.error(`Can't Purchase Under ${minimumQuantity} Products.`)
             }
         }
     };
@@ -78,11 +77,11 @@ const Purchase = () => {
                     {...register("number", {
                         required: {
                             value: true,
-                            message: 'number is Required'
+                            message: 'Required'
                         },
                         minLength: {
                             value: 9,
-                            message: 'Must be 9 characters'
+                            message: '9 Characters'
                         }
                     })} />
                 {errors.number?.type === 'required' && <span className="label-text-alt text-red-500">{errors.number.message}</span>}
