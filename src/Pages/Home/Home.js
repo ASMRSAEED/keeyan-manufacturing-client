@@ -11,10 +11,10 @@ const Home = () => {
         <div>
             <Banner />
             <Category />
-            <BusinessSummary />
             <Tools />
-            <UserReviews />
             <TrendingTools />
+            <BusinessSummary />
+            <UserReviews />
         </div>
     );
 };
