@@ -13,7 +13,7 @@ const Purchase = () => {
     const [quantity, setQuantity] = useState('')
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { isLoading, data: tool } = useQuery(['tool'], () =>
-        fetch(`https://mighty-ridge-59560.herokuapp.com/tools/${id}`).then(res =>
+        fetch(`http://localhost:5000/tools/${id}`).then(res =>
             res.json()
         )
     )
@@ -21,7 +21,6 @@ const Purchase = () => {
         return <Loading loading={isLoading} color={'#be03fc'}></Loading>
     }
     const { name: toolName, price, minimumQuantity, img, availableQuantity } = tool;
-    console.log(quantity)
     const onSubmit = (data, event) => {
         console.log(data)
         const email = user?.email;
@@ -34,9 +33,9 @@ const Purchase = () => {
             toast(`We have only ${availableQuantity} tools `)
         }
         if (availableQuantity > +quantity) {
-            if (minimumQuantity <= data.minimumQuantity) {
+            if (minimumQuantity <= availableQuantity) {
                 const newPrice = +data.minimumQuantity * price
-                fetch(`https://mighty-ridge-59560.herokuapp.com/purchase`, {
+                fetch(`http://localhost:5000/purchase`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -99,7 +98,7 @@ const Purchase = () => {
                 })} type="text" placeholder="Your Address" className="input input-bordered   w-full max-w-xs" />
                 {errors.address?.type === 'required' && <span className="label-text-alt text-red-500">{errors.address.message}</span>}
                 <label className="label">
-                    <span className="label-text">MinimumQuantity</span>
+                    <span className="label-text">Minimum Quantity</span>
                 </label>
                 <input onChange={(e) => setQuantity(e.target.value)} defaultValue={minimumQuantity} type="text" placeholder="Add Quantity" className="input input-bordered  w-full max-w-xs " />
 
