@@ -2,7 +2,7 @@
 
  ### [Live SIte](https://keeyan-manufacturing.web.app/).
 
-## Website Feature
+## Website Features Listed Below:
 
 #### “*” 1. The website has different features: a Navbar, Banner, Electric Tools, Business Summary, Reviews or footer and Every Electric Tool have a Purchase Button.
 

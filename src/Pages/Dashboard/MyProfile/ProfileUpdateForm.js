@@ -56,19 +56,19 @@ const ProfileUpdateForm = ({ children, profile, refetch }) => {
         <form onSubmit={updateProfile}>
             <div className='lg:w-full sm:w-2/4 mb-2 w-3/4 mx-auto'>
                 <label className="label"><span className="label-text">Education</span></label>
-                <input type="text" name='education' placeholder='Your Education' className="input input-bordered input-info w-full max-w-xs" required />
+                <input type="text" name='education' placeholder='Education' className="input input-bordered input-info w-full max-w-xs" required />
             </div>
             <div className='lg:w-full sm:w-2/4 mb-2 w-3/4 mx-auto'>
                 <label className="label"><span className="label-text">Location</span></label>
-                <input type="text" name='location' placeholder='Your Location' className="input  input-bordered input-info w-full max-w-xs" required />
+                <input type="text" name='location' placeholder='Location' className="input  input-bordered input-info w-full max-w-xs" required />
             </div>
             <div className='lg:w-full sm:w-2/4 mb-2 w-3/4 mx-auto'>
                 <label className="label"><span className="label-text">Phone Number</span></label>
-                <input type="number" name='number' placeholder='Your Phone Number' className="input input-bordered input-info w-full max-w-xs" required />
+                <input type="number" name='number' placeholder='Phone Number' className="input input-bordered input-info w-full max-w-xs" required />
             </div>
             <div className='lg:w-full sm:w-2/4 mb-2 w-3/4 mx-auto'>
-                <label className="label"><span className="label-text">LinkDin</span></label>
-                <input type="text" name='linkDin' placeholder='Your LinkDin Profile Link' className="input input-bordered input-info w-full max-w-xs" required />
+                <label className="label"><span className="label-text">LinkedIn Profile Link</span></label>
+                <input type="text" name='linkDin' placeholder='LinkedIn Profile Link' className="input input-bordered input-info w-full max-w-xs" required />
             </div>
             <div className='sm:w-2/4 md:w-2/4 lg:w-full w-2/4 mx-auto'>
                 {/* <input className='btn btn-outline  lg:w-2/4' type="submit" value={children} /> */}

@@ -8,28 +8,25 @@ const Footer = () => {
         <footer className='bg-[#071036]'>
             <div className="footer p-10  text-neutral-content">
                 <div>
-                    <span className="footer-title">Services</span>
-                    <Link to='/' className="link link-hover">Branding</Link>
-                    <Link to='/' className="link link-hover">Design</Link>
-                    <Link to='/' className="link link-hover">Marketing</Link>
-                    <Link to='/' className="link link-hover">Advertisement</Link>
+                    <span className="footer-title">Shopping with us</span>
+                    <Link to='/' className="link link-hover">Making payments</Link>
+                    <Link to='/' className="link link-hover">Delivery options</Link>
+                    <Link to='/' className="link link-hover">Buyer Protection</Link>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <Link to='/' className="link link-hover">About us</Link>
-                    <Link to='/' className="link link-hover">Contact</Link>
-                    <Link to='/' className="link link-hover">Jobs</Link>
-                    <Link to='/' className="link link-hover">Press kit</Link>
+                    <span className="footer-title">Customer service</span>
+                    <Link to='/' className="link link-hover">Customer service</Link>
+                    <Link to='/' className="link link-hover">Transaction Services Agreement</Link>
+                    <Link to='/' className="link link-hover">Take our feedback survey</Link>
                 </div>
                 <div>
-                    <span className="footer-title">Legal</span>
-                    <Link to='/' className="link link-hover">Terms of use</Link>
-                    <Link to='/' className="link link-hover">Privacy policy</Link>
-                    <Link to='/' className="link link-hover">Cookie policy</Link>
+                    <span className="footer-title">Collaborate with us</span>
+                    <Link to='/' className="link link-hover">Partnerships</Link>
+                    <Link to='/' className="link link-hover">Affiliate program</Link>
                 </div>
 
             </div>
-            <p className='text-white text-center pb-4'>Copyright © {year} - All right reserved by ACME Industries Ltd</p>
+            <p className='text-white text-center pb-4'>Copyright © {year} - All right reserved @ Keeyan Manufacturing</p>
         </footer>
     );
 };

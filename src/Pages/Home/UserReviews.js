@@ -13,9 +13,9 @@ const UserReviews = () => {
         return <Loading loading={isLoading} color={'#14aac4'}></Loading>
     }
     return (
-        <div className='mb-12'>
-            <h1 className='text-4xl text-center text-blue-900 font-bold mb-5'>Reviews</h1>
-            <div className='grid lg:grid-cols-3 lg:w-3/4 mx-auto'>
+        <div className='mb-12 '>
+            <h1 className='text-4xl text-center font-bold mb-5 text-green-500'><u>Customer Reviews:</u></h1>
+            <div className='grid lg:grid-cols-3 lg:w-3/4 mx-auto text-red-400'>
                 {
                     reviews.map(review => <Review key={review._id} review={review} />)
                 }
